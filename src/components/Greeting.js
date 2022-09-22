@@ -9,7 +9,7 @@ const Greeting = () => {
     dispatch(fetchGreetings());
   }, []);
 
-  const hundleGreetings = () => {
+  const handleGreetings = () => {
     dispatch(fetchGreetings());
   };
 
@@ -18,7 +18,7 @@ const Greeting = () => {
   return (
     <>
       <p>{greeting}</p>
-      <button type="button" onClick={hundleGreetings}>Random Greeting</button>
+      <button type="button" onClick={handleGreetings}>Random Greeting</button>
     </>
   );
 };
